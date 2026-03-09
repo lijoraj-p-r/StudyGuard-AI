@@ -818,5 +818,40 @@
         "timestamp": "2026-03-09 20:59:07.769355",
         "role": "AI",
         "message": "Target locked: 'finish pending'. Focus mode active."
+    },
+    {
+        "timestamp": "2026-03-09 21:17:35.069763",
+        "role": "AI",
+        "message": "Well done. You spent 18 minutes on your studies."
+    },
+    {
+        "timestamp": "2026-03-09 21:17:40.664829",
+        "role": "AI",
+        "message": "Active recall is vital! What's one thing you remember?"
+    },
+    {
+        "timestamp": "2026-03-09 21:17:46.868511",
+        "role": "AI",
+        "message": "Active recall is vital! What's one thing you remember?"
+    },
+    {
+        "timestamp": "2026-03-09 21:17:49.563419",
+        "role": "AI",
+        "message": "Active recall is vital! What's one thing you remember?"
+    },
+    {
+        "timestamp": "2026-03-09 21:19:39.712573",
+        "role": "AI",
+        "message": "Session finished. +90 KP earned."
+    },
+    {
+        "timestamp": "2026-03-09 21:19:42.709235",
+        "role": "AI",
+        "message": "Try 'study [subject]', 'interview', or 'tasks'."
+    },
+    {
+        "timestamp": "2026-03-09 21:22:10.375722",
+        "role": "AI",
+        "message": "Welcome back! I'm ready to help you study. What's on the agenda?"
     }
 ]

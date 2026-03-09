@@ -1,11 +1,11 @@
 {
-    "lifetime_seconds": 1000.1799699999998,
-    "knowledge_points": 162,
+    "lifetime_seconds": 2106.7067509999997,
+    "knowledge_points": 252,
     "study_streak": 1,
     "last_study_date": "2026-03-09",
     "subject_breakdown": {
         "java": 499.138972,
-        "general": 325.798671,
+        "general": 1432.325452,
         "pyton": 15.885917
     },
     "pending_tasks": [],
@@ -44,6 +44,11 @@
             "date": "2026-03-09 20:54:52.729130",
             "sub": "java",
             "sum": "java is smoth"
+        },
+        {
+            "date": "2026-03-09 21:19:39.711610",
+            "sub": "General Revision",
+            "sum": "java is simple"
         }
     ],
     "history": []
