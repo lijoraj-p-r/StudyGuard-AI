@@ -1,0 +1,50 @@
+{
+    "lifetime_seconds": 1000.1799699999998,
+    "knowledge_points": 162,
+    "study_streak": 1,
+    "last_study_date": "2026-03-09",
+    "subject_breakdown": {
+        "java": 499.138972,
+        "general": 325.798671,
+        "pyton": 15.885917
+    },
+    "pending_tasks": [],
+    "summary_history": [
+        {
+            "date": "2026-03-09 17:51:29.944896",
+            "sub": "General Revision",
+            "sum": "do work"
+        },
+        {
+            "date": "2026-03-09 17:52:47.192601",
+            "sub": "General Revision",
+            "sum": "find java"
+        },
+        {
+            "date": "2026-03-09 17:59:12.734656",
+            "sub": "java",
+            "sum": "python is good"
+        },
+        {
+            "date": "2026-03-09 18:10:17.354998",
+            "sub": "java",
+            "sum": "java"
+        },
+        {
+            "date": "2026-03-09 18:17:11.025054",
+            "sub": "General Revision",
+            "sum": "complete task"
+        },
+        {
+            "date": "2026-03-09 18:20:07.577937",
+            "sub": "General Revision",
+            "sum": "java is fast"
+        },
+        {
+            "date": "2026-03-09 20:54:52.729130",
+            "sub": "java",
+            "sum": "java is smoth"
+        }
+    ],
+    "history": []
+}

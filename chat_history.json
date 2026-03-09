@@ -1,0 +1,822 @@
+[
+    {
+        "timestamp": "2026-03-09 18:03:09.634675",
+        "role": "AI",
+        "message": "Ready to make progress? Try 'study', 'interview', or 'pending'."
+    },
+    {
+        "timestamp": "2026-03-09 18:03:15.132892",
+        "role": "User",
+        "message": "inderview"
+    },
+    {
+        "timestamp": "2026-03-09 18:03:15.134814",
+        "role": "AI",
+        "message": "Try 'study [subject]' or 'interview'."
+    },
+    {
+        "timestamp": "2026-03-09 18:03:23.896081",
+        "role": "User",
+        "message": "interview"
+    },
+    {
+        "timestamp": "2026-03-09 18:03:23.901261",
+        "role": "AI",
+        "message": "INTERVIEW PREP MODE: Let's sharpen your career skills."
+    },
+    {
+        "timestamp": "2026-03-09 18:03:24.727468",
+        "role": "AI",
+        "message": "Available Subjects: JAVA, PYTHON, MYSQL, DATABASE, APTITUDE"
+    },
+    {
+        "timestamp": "2026-03-09 18:03:28.560413",
+        "role": "User",
+        "message": "java"
+    },
+    {
+        "timestamp": "2026-03-09 18:03:28.561112",
+        "role": "AI",
+        "message": "Subject: JAVA. I'll ask a common interview question."
+    },
+    {
+        "timestamp": "2026-03-09 18:03:29.376628",
+        "role": "AI",
+        "message": "QUESTION: What is the difference between JDK, JRE, and JVM?"
+    },
+    {
+        "timestamp": "2026-03-09 18:03:54.577114",
+        "role": "User",
+        "message": "jdk stands for this and jre stands for this and jvm stand s for this"
+    },
+    {
+        "timestamp": "2026-03-09 18:03:54.577856",
+        "role": "AI",
+        "message": "I see your point. Let's look at the expert explanation."
+    },
+    {
+        "timestamp": "2026-03-09 18:03:55.417261",
+        "role": "AI",
+        "message": "Did this help you understand the concept better? (y/n)"
+    },
+    {
+        "timestamp": "2026-03-09 18:05:10.280449",
+        "role": "User",
+        "message": "y"
+    },
+    {
+        "timestamp": "2026-03-09 18:05:10.281201",
+        "role": "AI",
+        "message": "Great! +15 Knowledge Points for your growth."
+    },
+    {
+        "timestamp": "2026-03-09 18:05:16.352550",
+        "role": "User",
+        "message": "next"
+    },
+    {
+        "timestamp": "2026-03-09 18:05:16.353415",
+        "role": "AI",
+        "message": "Try 'study [subject]' or 'interview'."
+    },
+    {
+        "timestamp": "2026-03-09 18:05:23.426092",
+        "role": "User",
+        "message": "interview"
+    },
+    {
+        "timestamp": "2026-03-09 18:05:23.430021",
+        "role": "AI",
+        "message": "INTERVIEW PREP MODE: Let's sharpen your career skills."
+    },
+    {
+        "timestamp": "2026-03-09 18:05:24.257163",
+        "role": "AI",
+        "message": "Available Subjects: JAVA, PYTHON, MYSQL, DATABASE, APTITUDE"
+    },
+    {
+        "timestamp": "2026-03-09 18:05:27.860843",
+        "role": "User",
+        "message": "java"
+    },
+    {
+        "timestamp": "2026-03-09 18:05:27.861668",
+        "role": "AI",
+        "message": "Subject: JAVA. I'll ask a common interview question."
+    },
+    {
+        "timestamp": "2026-03-09 18:05:28.635449",
+        "role": "AI",
+        "message": "QUESTION: How does Garbage Collection work in Java?"
+    },
+    {
+        "timestamp": "2026-03-09 18:05:50.828200",
+        "role": "User",
+        "message": "garbage colletor clears memeory easly"
+    },
+    {
+        "timestamp": "2026-03-09 18:05:50.829296",
+        "role": "AI",
+        "message": "I see your point. Let's look at the expert explanation."
+    },
+    {
+        "timestamp": "2026-03-09 18:05:51.672707",
+        "role": "AI",
+        "message": "Did this help you understand the concept better? (y/n)"
+    },
+    {
+        "timestamp": "2026-03-09 18:05:55.954021",
+        "role": "User",
+        "message": "y"
+    },
+    {
+        "timestamp": "2026-03-09 18:05:55.955277",
+        "role": "AI",
+        "message": "Great! +15 Knowledge Points for your growth."
+    },
+    {
+        "timestamp": "2026-03-09 18:06:03.958460",
+        "role": "AI",
+        "message": "Ready to make progress? Try 'study', 'interview', or 'pending'."
+    },
+    {
+        "timestamp": "2026-03-09 18:06:10.796954",
+        "role": "User",
+        "message": "interview"
+    },
+    {
+        "timestamp": "2026-03-09 18:06:10.801670",
+        "role": "AI",
+        "message": "INTERVIEW PREP MODE: Let's sharpen your career skills."
+    },
+    {
+        "timestamp": "2026-03-09 18:06:11.647219",
+        "role": "AI",
+        "message": "Available Subjects: JAVA, PYTHON, MYSQL, DATABASE, APTITUDE"
+    },
+    {
+        "timestamp": "2026-03-09 18:06:57.314345",
+        "role": "User",
+        "message": "java"
+    },
+    {
+        "timestamp": "2026-03-09 18:06:57.315448",
+        "role": "AI",
+        "message": "Subject: JAVA. I'll ask a common interview question."
+    },
+    {
+        "timestamp": "2026-03-09 18:06:58.138737",
+        "role": "AI",
+        "message": "QUESTION: What is an Abstract Class vs Interface?"
+    },
+    {
+        "timestamp": "2026-03-09 18:07:39.811983",
+        "role": "User",
+        "message": ""
+    },
+    {
+        "timestamp": "2026-03-09 18:07:39.812984",
+        "role": "AI",
+        "message": "That's a bit brief for an interview! In a real scenario, you should explain the 'why' to impress the recruiter."
+    },
+    {
+        "timestamp": "2026-03-09 18:07:41.498675",
+        "role": "AI",
+        "message": "Does this help clarify the concept for you? (yes/no)"
+    },
+    {
+        "timestamp": "2026-03-09 18:08:43.655196",
+        "role": "User",
+        "message": "yyes"
+    },
+    {
+        "timestamp": "2026-03-09 18:08:43.656406",
+        "role": "AI",
+        "message": "Excellent! Keep refining your communication. +15 Knowledge Points."
+    },
+    {
+        "timestamp": "2026-03-09 18:08:47.172994",
+        "role": "User",
+        "message": "ok"
+    },
+    {
+        "timestamp": "2026-03-09 18:08:47.175841",
+        "role": "AI",
+        "message": "Try 'study [subject]' or 'interview'."
+    },
+    {
+        "timestamp": "2026-03-09 18:08:57.772292",
+        "role": "User",
+        "message": "pending"
+    },
+    {
+        "timestamp": "2026-03-09 18:08:57.778140",
+        "role": "AI",
+        "message": "Academic Checklist"
+    },
+    {
+        "timestamp": "2026-03-09 18:09:00.712104",
+        "role": "User",
+        "message": "ok"
+    },
+    {
+        "timestamp": "2026-03-09 18:09:04.208791",
+        "role": "User",
+        "message": "b"
+    },
+    {
+        "timestamp": "2026-03-09 18:09:04.209939",
+        "role": "AI",
+        "message": "Try 'study [subject]' or 'interview'."
+    },
+    {
+        "timestamp": "2026-03-09 18:09:09.231494",
+        "role": "User",
+        "message": "study java"
+    },
+    {
+        "timestamp": "2026-03-09 18:09:09.236310",
+        "role": "AI",
+        "message": "Session: JAVA"
+    },
+    {
+        "timestamp": "2026-03-09 18:09:26.719455",
+        "role": "User",
+        "message": "finish fundamantals of java"
+    },
+    {
+        "timestamp": "2026-03-09 18:10:17.352550",
+        "role": "User",
+        "message": "java"
+    },
+    {
+        "timestamp": "2026-03-09 18:10:20.191227",
+        "role": "User",
+        "message": ""
+    },
+    {
+        "timestamp": "2026-03-09 18:10:20.192330",
+        "role": "AI",
+        "message": "Try 'study [subject]' or 'interview'."
+    },
+    {
+        "timestamp": "2026-03-09 18:10:26.769082",
+        "role": "User",
+        "message": ""
+    },
+    {
+        "timestamp": "2026-03-09 18:10:26.770503",
+        "role": "AI",
+        "message": "Try 'study [subject]' or 'interview'."
+    },
+    {
+        "timestamp": "2026-03-09 18:10:32.356028",
+        "role": "User",
+        "message": ""
+    },
+    {
+        "timestamp": "2026-03-09 18:10:32.357588",
+        "role": "AI",
+        "message": "Try 'study [subject]' or 'interview'."
+    },
+    {
+        "timestamp": "2026-03-09 18:10:40.420172",
+        "role": "AI",
+        "message": "Ready to make progress? Try 'study', 'interview', or 'pending'."
+    },
+    {
+        "timestamp": "2026-03-09 18:10:45.781124",
+        "role": "User",
+        "message": "interview"
+    },
+    {
+        "timestamp": "2026-03-09 18:10:45.785882",
+        "role": "AI",
+        "message": "INTERVIEW PREP MODE: Let's sharpen your career skills."
+    },
+    {
+        "timestamp": "2026-03-09 18:10:46.589989",
+        "role": "AI",
+        "message": "Available Subjects: JAVA, PYTHON, MYSQL, DATABASE, APTITUDE"
+    },
+    {
+        "timestamp": "2026-03-09 18:10:47.509159",
+        "role": "AI",
+        "message": "Type 'exit' at any time to return to the main menu."
+    },
+    {
+        "timestamp": "2026-03-09 18:10:50.123315",
+        "role": "User",
+        "message": "java"
+    },
+    {
+        "timestamp": "2026-03-09 18:10:50.124829",
+        "role": "AI",
+        "message": "Subject: JAVA. I'll ask a common interview question."
+    },
+    {
+        "timestamp": "2026-03-09 18:10:50.915900",
+        "role": "AI",
+        "message": "QUESTION: How does Garbage Collection work in Java?"
+    },
+    {
+        "timestamp": "2026-03-09 18:10:59.268934",
+        "role": "User",
+        "message": "help to clear memory"
+    },
+    {
+        "timestamp": "2026-03-09 18:10:59.270519",
+        "role": "AI",
+        "message": "That's a bit brief for an interview! In a real scenario, you should explain the 'why' to impress the recruiter."
+    },
+    {
+        "timestamp": "2026-03-09 18:11:00.951857",
+        "role": "AI",
+        "message": "Does this help clarify the concept for you? (yes/no) [or type 'exit' to leave]"
+    },
+    {
+        "timestamp": "2026-03-09 18:11:09.751597",
+        "role": "User",
+        "message": "yes"
+    },
+    {
+        "timestamp": "2026-03-09 18:11:09.753092",
+        "role": "AI",
+        "message": "Excellent! Keep refining your communication. +15 Knowledge Points."
+    },
+    {
+        "timestamp": "2026-03-09 18:11:10.763520",
+        "role": "AI",
+        "message": "Ready for another one? Choose a subject or type 'exit'."
+    },
+    {
+        "timestamp": "2026-03-09 18:11:12.610893",
+        "role": "AI",
+        "message": "Available Subjects: JAVA, PYTHON, MYSQL, DATABASE, APTITUDE"
+    },
+    {
+        "timestamp": "2026-03-09 18:11:13.496557",
+        "role": "AI",
+        "message": "Type 'exit' at any time to return to the main menu."
+    },
+    {
+        "timestamp": "2026-03-09 18:15:37.538683",
+        "role": "AI",
+        "message": "Ready to make progress? Try 'study', 'interview', or 'pending'."
+    },
+    {
+        "timestamp": "2026-03-09 18:15:43.742041",
+        "role": "User",
+        "message": "study"
+    },
+    {
+        "timestamp": "2026-03-09 18:15:43.748149",
+        "role": "AI",
+        "message": "Session: GENERAL REVISION"
+    },
+    {
+        "timestamp": "2026-03-09 18:15:50.284323",
+        "role": "User",
+        "message": "finsh peniding"
+    },
+    {
+        "timestamp": "2026-03-09 18:17:11.023295",
+        "role": "User",
+        "message": "complete task"
+    },
+    {
+        "timestamp": "2026-03-09 18:17:13.240831",
+        "role": "User",
+        "message": ""
+    },
+    {
+        "timestamp": "2026-03-09 18:17:13.243004",
+        "role": "AI",
+        "message": "Try 'study [subject]' or 'interview'."
+    },
+    {
+        "timestamp": "2026-03-09 18:17:18.420108",
+        "role": "User",
+        "message": "interview"
+    },
+    {
+        "timestamp": "2026-03-09 18:17:18.426722",
+        "role": "AI",
+        "message": "INTERVIEW PREP MODE: Let's sharpen your career skills."
+    },
+    {
+        "timestamp": "2026-03-09 18:17:19.264067",
+        "role": "AI",
+        "message": "Available Subjects: JAVA, PYTHON, MYSQL, DATABASE, APTITUDE"
+    },
+    {
+        "timestamp": "2026-03-09 18:17:20.178132",
+        "role": "AI",
+        "message": "Type 'exit' to return to the main menu."
+    },
+    {
+        "timestamp": "2026-03-09 18:17:23.361785",
+        "role": "User",
+        "message": "java"
+    },
+    {
+        "timestamp": "2026-03-09 18:17:23.363873",
+        "role": "AI",
+        "message": "TARGET LOCKED: JAVA. I'll keep the questions coming until you're ready to stop."
+    },
+    {
+        "timestamp": "2026-03-09 18:17:24.580382",
+        "role": "AI",
+        "message": "Remember: Type 'exit' at any prompt to finish the session."
+    },
+    {
+        "timestamp": "2026-03-09 18:17:25.464116",
+        "role": "AI",
+        "message": "QUESTION: What is an Abstract Class vs Interface?"
+    },
+    {
+        "timestamp": "2026-03-09 18:17:35.671586",
+        "role": "User",
+        "message": "abstract"
+    },
+    {
+        "timestamp": "2026-03-09 18:17:35.673593",
+        "role": "AI",
+        "message": "That's a bit brief for an interview! In a real scenario, you should explain the 'why' to impress the recruiter."
+    },
+    {
+        "timestamp": "2026-03-09 18:17:37.398295",
+        "role": "AI",
+        "message": "Does this clarify the concept for you? (yes/no) [or type 'exit']"
+    },
+    {
+        "timestamp": "2026-03-09 18:19:46.781910",
+        "role": "AI",
+        "message": "Ready to make progress? Try 'study', 'interview', or 'pending'."
+    },
+    {
+        "timestamp": "2026-03-09 18:19:51.435202",
+        "role": "User",
+        "message": "study"
+    },
+    {
+        "timestamp": "2026-03-09 18:19:51.441263",
+        "role": "AI",
+        "message": "Session: GENERAL REVISION"
+    },
+    {
+        "timestamp": "2026-03-09 18:19:59.991276",
+        "role": "User",
+        "message": "finsish java"
+    },
+    {
+        "timestamp": "2026-03-09 18:20:07.575880",
+        "role": "User",
+        "message": "java is fast"
+    },
+    {
+        "timestamp": "2026-03-09 18:20:12.451644",
+        "role": "User",
+        "message": "interview"
+    },
+    {
+        "timestamp": "2026-03-09 18:20:12.456866",
+        "role": "AI",
+        "message": "INTERVIEW PREP MODE: Let's sharpen your career skills."
+    },
+    {
+        "timestamp": "2026-03-09 18:20:13.289815",
+        "role": "AI",
+        "message": "Available Subjects: JAVA, PYTHON, MYSQL, DATABASE, APTITUDE"
+    },
+    {
+        "timestamp": "2026-03-09 18:20:14.181966",
+        "role": "AI",
+        "message": "Type 'exit' to return to the main menu."
+    },
+    {
+        "timestamp": "2026-03-09 18:20:15.962570",
+        "role": "User",
+        "message": "java"
+    },
+    {
+        "timestamp": "2026-03-09 18:20:15.964829",
+        "role": "AI",
+        "message": "TARGET LOCKED: JAVA. I'll keep the questions coming until you're ready to stop."
+    },
+    {
+        "timestamp": "2026-03-09 18:20:17.180375",
+        "role": "AI",
+        "message": "QUESTION: What is an Abstract Class vs Interface?"
+    },
+    {
+        "timestamp": "2026-03-09 18:20:23.643600",
+        "role": "User",
+        "message": "interfase"
+    },
+    {
+        "timestamp": "2026-03-09 18:20:23.645868",
+        "role": "AI",
+        "message": "That's a bit brief for an interview! Aim for more detail to impress recruiters.\n\n\u001b[1mPROFESSIONAL EXPLANATION:\u001b[0m\nAn Abstract class can provide default behavior and maintain internal state, whereas an Interface acts as a strict contract defining what a class must do.\n\nDoes this clarify the concept for you? (yes/no) [or type 'exit']"
+    },
+    {
+        "timestamp": "2026-03-09 18:33:58.227064",
+        "role": "AI",
+        "message": "Welcome back! I'm ready to help you study. What's on the agenda?"
+    },
+    {
+        "timestamp": "2026-03-09 18:34:06.398137",
+        "role": "AI",
+        "message": "INTERVIEW PREP MODE: Let's sharpen your career skills."
+    },
+    {
+        "timestamp": "2026-03-09 18:34:07.250524",
+        "role": "AI",
+        "message": "Available Subjects: JAVA, PYTHON, MYSQL, DATABASE, APTITUDE"
+    },
+    {
+        "timestamp": "2026-03-09 18:34:10.743856",
+        "role": "AI",
+        "message": "TARGET LOCKED: APTITUDE. Type 'exit' to finish."
+    },
+    {
+        "timestamp": "2026-03-09 18:34:11.448441",
+        "role": "AI",
+        "message": "QUESTION: If 5 workers can build a wall in 12 days, how long will 10 workers take?"
+    },
+    {
+        "timestamp": "2026-03-09 18:34:25.144594",
+        "role": "AI",
+        "message": "Try to be more descriptive.\n\n\u001b[1mPROFESSIONAL EXPLANATION:\u001b[0m\nThis is an inverse proportion puzzle. The logic is simple: if you have more people working, the task gets done faster. Since you are doubling the workforce from 5 to 10 workers, the time taken will be cut exactly in half. So, instead of the original 12 days, the 10 workers will finish building that same wall in just 6 days.\n\nContinue? (y/n)"
+    },
+    {
+        "timestamp": "2026-03-09 18:34:36.979514",
+        "role": "AI",
+        "message": "QUESTION: What is the probability of getting a sum of 7 when rolling two dice?"
+    },
+    {
+        "timestamp": "2026-03-09 18:34:41.076485",
+        "role": "AI",
+        "message": "Try to be more descriptive.\n\n\u001b[1mPROFESSIONAL EXPLANATION:\u001b[0m\nWhen you roll two dice, there are 36 possible combinations in total. To get a sum of 7, there are 6 specific pairs: (1,6), (2,5), (3,4), (4,3), (5,2), and (6,1). Since 6 out of the 36 possible outcomes result in a 7, the probability is 6/36. When you simplify that fraction, you get a final probability of 1 in 6.\n\nContinue? (y/n)"
+    },
+    {
+        "timestamp": "2026-03-09 18:39:04.144402",
+        "role": "AI",
+        "message": "Welcome back! I'm ready to help you study. What's on the agenda?"
+    },
+    {
+        "timestamp": "2026-03-09 18:39:08.297837",
+        "role": "AI",
+        "message": "Try 'study [subject]', 'interview', or 'tasks'."
+    },
+    {
+        "timestamp": "2026-03-09 18:39:11.943306",
+        "role": "AI",
+        "message": "INTERVIEW PREP MODE: Let's sharpen your career skills."
+    },
+    {
+        "timestamp": "2026-03-09 18:39:12.809662",
+        "role": "AI",
+        "message": "Available Subjects: JAVA, PYTHON, MYSQL, DATABASE, APTITUDE"
+    },
+    {
+        "timestamp": "2026-03-09 18:39:15.273816",
+        "role": "AI",
+        "message": "TARGET LOCKED: JAVA. Type 'exit' to finish."
+    },
+    {
+        "timestamp": "2026-03-09 18:39:15.958887",
+        "role": "AI",
+        "message": "QUESTION: Explain 'public static void main(String[] args)'."
+    },
+    {
+        "timestamp": "2026-03-09 18:39:26.815855",
+        "role": "AI",
+        "message": "Try to be more descriptive.\n\n\u001b[1mPROFESSIONAL EXPLANATION:\u001b[0m\nThis is the starting line of any Java program. 'Public' means it is accessible from anywhere. 'Static' is crucial because it allows the JVM to call the method without creating an instance of the class first. 'Void' means it doesn't return a value, and 'String[] args' is how you pass command-line arguments into your application.\n\nContinue? (y/n)"
+    },
+    {
+        "timestamp": "2026-03-09 18:39:35.862132",
+        "role": "AI",
+        "message": "QUESTION: How does Garbage Collection work in Java?"
+    },
+    {
+        "timestamp": "2026-03-09 18:39:47.565271",
+        "role": "AI",
+        "message": "Try to be more descriptive.\n\n\u001b[1mPROFESSIONAL EXPLANATION:\u001b[0m\nGarbage collection is Java's way of being a tidy roommate. It automatically scans the heap memory to find objects that are no longer being used or referenced by your application. Once identified, it clears them out to free up space. This is great because it prevents memory leaks and saves developers from having to manually manage memory allocation.\n\nContinue? (y/n)"
+    },
+    {
+        "timestamp": "2026-03-09 18:39:56.385141",
+        "role": "AI",
+        "message": "QUESTION: What is an Abstract Class vs Interface?"
+    },
+    {
+        "timestamp": "2026-03-09 18:39:58.887273",
+        "role": "AI",
+        "message": "Try to be more descriptive.\n\n\u001b[1mPROFESSIONAL EXPLANATION:\u001b[0m\nAn abstract class is like a partially built house; it can have finished rooms (concrete methods) and unfinished ones (abstract methods). It can also hold state. An interface, however, is more like a blueprint or a contract; it strictly defines what a class must do without providing the actual implementation or storing any instance variables.\n\nContinue? (y/n)"
+    },
+    {
+        "timestamp": "2026-03-09 18:40:08.524058",
+        "role": "AI",
+        "message": "QUESTION: What is the difference between '==' and '.equals()' in Java?"
+    },
+    {
+        "timestamp": "2026-03-09 18:40:10.828178",
+        "role": "AI",
+        "message": "Try to be more descriptive.\n\n\u001b[1mPROFESSIONAL EXPLANATION:\u001b[0m\nThe '==' operator is like checking if two people are the exact same person (comparing memory addresses). The '.equals()' method, however, is like checking if two people have the same name or ID (comparing the actual content/values). For Strings, you almost always want to use '.equals()' to ensure you are comparing characters and not memory locations.\n\nContinue? (y/n)"
+    },
+    {
+        "timestamp": "2026-03-09 18:40:18.369571",
+        "role": "AI",
+        "message": "QUESTION: What is the Java Collections Framework?"
+    },
+    {
+        "timestamp": "2026-03-09 18:40:22.608228",
+        "role": "AI",
+        "message": "Try to be more descriptive.\n\n\u001b[1mPROFESSIONAL EXPLANATION:\u001b[0m\nThe Collections Framework is a unified architecture for storing and manipulating groups of objects. It provides standard interfaces like List, Set, and Map, along with implementations like ArrayList and HashMap. It is essential because it provides high-performance data structures and algorithms out of the box, saving you from reinventing the wheel.\n\nContinue? (y/n)"
+    },
+    {
+        "timestamp": "2026-03-09 20:40:25.540733",
+        "role": "AI",
+        "message": "Welcome back! I'm ready to help you study. What's on the agenda?"
+    },
+    {
+        "timestamp": "2026-03-09 20:41:16.447366",
+        "role": "AI",
+        "message": "Your Academic Checklist"
+    },
+    {
+        "timestamp": "2026-03-09 20:41:45.516177",
+        "role": "AI",
+        "message": "Try 'study [subject]', 'interview', or 'tasks'."
+    },
+    {
+        "timestamp": "2026-03-09 20:41:53.827755",
+        "role": "AI",
+        "message": "Your Academic Checklist"
+    },
+    {
+        "timestamp": "2026-03-09 20:42:19.969432",
+        "role": "AI",
+        "message": "Try 'study [subject]', 'interview', or 'tasks'."
+    },
+    {
+        "timestamp": "2026-03-09 20:42:25.077901",
+        "role": "AI",
+        "message": "Your Academic Checklist"
+    },
+    {
+        "timestamp": "2026-03-09 20:46:45.937823",
+        "role": "AI",
+        "message": "Welcome back! I'm ready to help you study. What's on the agenda?"
+    },
+    {
+        "timestamp": "2026-03-09 20:46:54.727185",
+        "role": "AI",
+        "message": "Session: JAVA"
+    },
+    {
+        "timestamp": "2026-03-09 20:46:54.930734",
+        "role": "AI",
+        "message": "Think in objects. Debugging is part of the process."
+    },
+    {
+        "timestamp": "2026-03-09 20:47:04.273127",
+        "role": "AI",
+        "message": "Target locked: 'finish pending'. Focus mode active."
+    },
+    {
+        "timestamp": "2026-03-09 20:51:50.237073",
+        "role": "AI",
+        "message": "Well done. You spent 4 minutes on your studies."
+    },
+    {
+        "timestamp": "2026-03-09 20:51:57.936154",
+        "role": "AI",
+        "message": "Welcome back! I'm ready to help you study. What's on the agenda?"
+    },
+    {
+        "timestamp": "2026-03-09 20:52:01.699709",
+        "role": "AI",
+        "message": "Try 'study [subject]', 'interview', or 'tasks'."
+    },
+    {
+        "timestamp": "2026-03-09 20:52:05.101935",
+        "role": "AI",
+        "message": "Academic Task Hub"
+    },
+    {
+        "timestamp": "2026-03-09 20:52:28.786726",
+        "role": "AI",
+        "message": "Academic Task Hub"
+    },
+    {
+        "timestamp": "2026-03-09 20:52:35.833711",
+        "role": "AI",
+        "message": "Academic Task Hub"
+    },
+    {
+        "timestamp": "2026-03-09 20:52:41.509148",
+        "role": "AI",
+        "message": "Academic Task Hub"
+    },
+    {
+        "timestamp": "2026-03-09 20:52:43.470425",
+        "role": "AI",
+        "message": "Academic Task Hub"
+    },
+    {
+        "timestamp": "2026-03-09 20:52:46.883926",
+        "role": "AI",
+        "message": "Academic Task Hub"
+    },
+    {
+        "timestamp": "2026-03-09 20:52:52.854113",
+        "role": "AI",
+        "message": "Academic Task Hub"
+    },
+    {
+        "timestamp": "2026-03-09 20:52:56.257760",
+        "role": "AI",
+        "message": "Academic Task Hub"
+    },
+    {
+        "timestamp": "2026-03-09 20:53:16.120793",
+        "role": "AI",
+        "message": "Try 'study [subject]', 'interview', or 'tasks'."
+    },
+    {
+        "timestamp": "2026-03-09 20:53:23.738521",
+        "role": "AI",
+        "message": "Session: JAVA"
+    },
+    {
+        "timestamp": "2026-03-09 20:53:23.940466",
+        "role": "AI",
+        "message": "Think in objects. Debugging is part of the process."
+    },
+    {
+        "timestamp": "2026-03-09 20:53:34.792743",
+        "role": "AI",
+        "message": "Target locked: 'finsih pending'. Focus mode active."
+    },
+    {
+        "timestamp": "2026-03-09 20:54:46.188274",
+        "role": "AI",
+        "message": "Well done. You spent 1 minutes on your studies."
+    },
+    {
+        "timestamp": "2026-03-09 20:54:52.730057",
+        "role": "AI",
+        "message": "Session finished. +5 KP earned."
+    },
+    {
+        "timestamp": "2026-03-09 20:55:05.235898",
+        "role": "AI",
+        "message": "Try 'study [subject]', 'interview', or 'tasks'."
+    },
+    {
+        "timestamp": "2026-03-09 20:57:27.450664",
+        "role": "AI",
+        "message": "INTERVIEW PREP MODE: Let's sharpen your career skills."
+    },
+    {
+        "timestamp": "2026-03-09 20:57:28.268209",
+        "role": "AI",
+        "message": "Available Subjects: JAVA, PYTHON, MYSQL, DATABASE, APTITUDE"
+    },
+    {
+        "timestamp": "2026-03-09 20:57:31.491641",
+        "role": "AI",
+        "message": "TARGET LOCKED: JAVA. Type 'exit' to finish."
+    },
+    {
+        "timestamp": "2026-03-09 20:57:32.148450",
+        "role": "AI",
+        "message": "QUESTION: Explain 'public static void main(String[] args)'."
+    },
+    {
+        "timestamp": "2026-03-09 20:58:24.027296",
+        "role": "AI",
+        "message": "Detailed response. Good.\n\n\u001b[1mPROFESSIONAL EXPLANATION:\u001b[0m\nThis is the starting line of any Java program. 'Public' means it is accessible from anywhere. 'Static' is crucial because it allows the JVM to call the method without creating an instance of the class first. 'Void' means it doesn't return a value, and 'String[] args' is how you pass command-line arguments into your application.\n\nContinue? (y/n)"
+    },
+    {
+        "timestamp": "2026-03-09 20:58:35.018290",
+        "role": "AI",
+        "message": "QUESTION: What is an Abstract Class vs Interface?"
+    },
+    {
+        "timestamp": "2026-03-09 20:58:56.087185",
+        "role": "AI",
+        "message": "Welcome back! I'm ready to help you study. What's on the agenda?"
+    },
+    {
+        "timestamp": "2026-03-09 20:59:01.208661",
+        "role": "AI",
+        "message": "Session: GENERAL REVISION"
+    },
+    {
+        "timestamp": "2026-03-09 20:59:07.769355",
+        "role": "AI",
+        "message": "Target locked: 'finish pending'. Focus mode active."
+    }
+]
