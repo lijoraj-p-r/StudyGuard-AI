@@ -96,10 +96,18 @@ class StudySession:
         
         self.mentor.speak(f"Well done. You spent {mins} minutes on your studies.", "supportive")
         
-        # Force active recall with a summary
+        # Force active recall with a variety of prompts
+        recall_prompts = [
+            "In one sentence, what's the most important thing you just learned? › ",
+            "What's one key takeaway from this session? › ",
+            "If you had to explain this to a friend, what would you say? › ",
+            "Summarize your main breakthrough from this session. › ",
+            "What's the one thing that clicked for you just now? › "
+        ]
+        
         while True:
-            summary = UI.get_input("In one sentence, what's the most important thing you just learned? › ")
-            if len(summary) < 5 or any(w in summary.lower() for w in ["nothing", "forgot", "idk"]):
+            summary = UI.get_input(random.choice(recall_prompts))
+            if len(summary) < 5 or any(w in summary.lower() for w in ["nothing", "forgot", "idk", "none"]):
                 self.mentor.speak("Active recall is vital! What's one thing you remember?", "firm")
             else: break
             
@@ -152,15 +160,29 @@ class InterviewPrep:
             asked.append(item['q'])
             
             self.mentor.speak(f"QUESTION: {item['q']}", "teacher")
-            user_ans = UI.get_input("Your Answer (press Enter to see explanation) › ")
+            user_ans = UI.get_input("Your Answer › ")
             if "exit" in user_ans.lower(): break
             
+            # Constructive feedback and points based on effort
+            if len(user_ans) < 15:
+                self.mentor.speak("That's a bit brief for an interview. Try to be more descriptive next time!", "firm")
+                earned_kp = 5
+            elif len(user_ans) > 50:
+                self.mentor.speak("Excellent level of detail. This kind of thoroughness impresses recruiters!", "supportive")
+                earned_kp = 15
+            else:
+                earned_kp = 10
+
             # Show the expert explanation
-            self.mentor.speak(item['a'], "teacher")
-            self.stats_manager.stats["knowledge_points"] += 5
+            print(f"\n  {UI.C['bold']}PROFESSIONAL EXPLANATION:{UI.C['reset']}")
+            UI.typewriter(item['a'])
+            
+            self.stats_manager.stats["knowledge_points"] += earned_kp
             self.stats_manager.save_stats()
-            print(f"\n{UI.C['dim']}--- Next Question Incoming ---{UI.C['reset']}")
-            time.sleep(1)
+            
+            cont = UI.get_input(f"\n{UI.C['dim']}Continue to next question? (y/n) › {UI.C['reset']}")
+            if cont.lower() != 'y': break
+            UI.clear_screen()
 
 class TaskManager:
     """

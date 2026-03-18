@@ -62,7 +62,7 @@ class StudyGuardApp:
                     self.mentor.speak("Goodbye! Rest well and come back stronger.", "supportive")
                     break
                 elif intent == "help":
-                    self.mentor.speak("You can say 'Study [Subject]', 'Interview', 'Manage tasks', 'Journal', or 'Dashboard'.", "teacher")
+                    self.mentor.respond("help")
                 elif intent == "stats":
                     UI.show_dashboard(self.stats_manager.stats, self.stats_manager.get_rank())
                 elif intent == "pending":
@@ -73,18 +73,14 @@ class StudyGuardApp:
                     self.journal.run()
                 elif intent == "sprint":
                     self.study_session.run(None, is_sprint=True)
-                elif intent == "apology":
-                    self.mentor.speak("Focus on action, not words. Ready to study?", "supportive")
-                elif intent == "gratitude":
-                    self.mentor.speak("Happy to help. Keep pushing!", "supportive")
-                elif intent == "greeting":
-                    self.mentor.speak("Hello! Let's make some progress today.", "supportive")
+                elif intent in ["apology", "gratitude", "greeting"]:
+                    self.mentor.respond(intent)
                 elif intent == "distracted":
                     self.mentor.scold()
                 elif intent == "studying":
                     self.study_session.run(subject)
                 else:
-                    self.mentor.speak("Try 'study [subject]', 'interview', or 'tasks'.", "teacher")
+                    self.mentor.respond("unknown")
                     
             except KeyboardInterrupt:
                 # Ensure stats are saved on abrupt exit

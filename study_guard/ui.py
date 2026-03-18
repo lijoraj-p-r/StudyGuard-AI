@@ -114,36 +114,47 @@ class Interpreter:
         inp = user_input.lower().strip()
         if not inp: return "none", None
         
-        # Command Keyword Mapping
-        if any(w in inp for w in ["exit", "quit", "done", "bye"]): return "exit", None
-        if any(w in inp for w in ["stats", "dashboard", "rank", "progress"]): return "stats", None
-        if any(w in inp for w in ["pending", "tasks", "todo", "homework"]): return "pending", None
-        if any(w in inp for w in ["help", "guide"]): return "help", None
-        if any(w in inp for w in ["sorry", "apology"]): return "apology", None
-        if any(w in inp for w in ["thanks", "thank you"]): return "gratitude", None
-        if any(w in inp for w in ["hello", "hi", "hey"]): return "greeting", None
-        if any(w in inp for w in ["interview", "prep", "mock", "question"]): return "interview", None
-        if any(w in inp for w in ["sprint", "quick"]): return "sprint", None
-        if any(w in inp for w in ["journal", "log", "diary", "achievement", "today"]): return "journal", None
+        # Command Keyword Mapping with typo tolerance
+        if any(w in inp for w in ["exit", "quit", "done", "bye", "stop"]): return "exit", None
+        if any(w in inp for w in ["stats", "dashboard", "rank", "progress", "score", "kp"]): return "stats", None
+        if any(w in inp for w in ["pending", "tasks", "todo", "homework", "check", "list"]): return "pending", None
+        if any(w in inp for w in ["help", "guide", "commands", "what can i do"]): return "help", None
+        if any(w in inp for w in ["sorry", "apology", "my bad"]): return "apology", None
+        if any(w in inp for w in ["thanks", "thank you", "thx", "cool", "great"]): return "gratitude", None
+        if any(w in inp for w in ["hello", "hi", "hey", "greet", "morning", "evening"]): return "greeting", None
+        if any(w in inp for w in ["interview", "prep", "mock", "question", "inderview", "intrvw"]): return "interview", None
+        if any(w in inp for w in ["sprint", "quick", "fast", "10m"]): return "sprint", None
+        if any(w in inp for w in ["journal", "log", "diary", "achievement", "today", "done today"]): return "journal", None
+        if any(w in inp for w in ["back", "menu", "return", "ok", "next", "continue"]): return "stats", None # Default to dashboard for 'back/ok'
 
         # Anti-distraction logic
-        distractions = ["scroll", "insta", "game", "lazy", "netflix"]
+        distractions = ["scroll", "insta", "game", "lazy", "netflix", "youtube", "tiktok", "reels"]
         if any(d in inp for d in distractions): return "distracted", None
         
-        # Subject detection logic
-        study_patterns = ["study", "read", "learn", "start", "ready", "revise"]
+        # Subject detection logic (more robust)
+        study_patterns = ["study", "read", "learn", "start", "ready", "revise", "studdy", "stdy", "revising", "learning"]
         found_subject = None
         
-        # 1. Check for explicit subject mentions
+        # 1. Check for explicit subject mentions with boundary check
         for s in known_subjects.keys():
             if re.search(r'\b' + s + r'\b', inp):
                 found_subject = s
                 break
         
-        # 2. Extract subject using regex patterns (e.g., 'study math')
+        # 2. Extract subject using expanded regex patterns
         if not found_subject:
-            match = re.search(r'(?:study|studying|on|read|reading|revise|revising)\s+([a-zA-Z0-9]+)', inp)
-            if match: found_subject = match.group(1)
+            # Matches 'study python', 'let's learn math', 'revision on java'
+            patterns = [
+                r'(?:study|studying|read|reading|revise|revising|learn|learning|stdy|studdy|on)\s+([a-zA-Z0-9]+)',
+                r'^([a-zA-Z0-9]+)$' # Just the subject name
+            ]
+            for p in patterns:
+                match = re.search(p, inp)
+                if match:
+                    potential = match.group(1)
+                    if potential in known_subjects or len(potential) > 2:
+                        found_subject = potential
+                        break
 
         if found_subject or any(p in inp for p in study_patterns):
             return "studying", found_subject
