@@ -238,3 +238,56 @@ class TaskManager:
             
             elif any(w in c for w in ['b', 'back']):
                 break
+
+class DailyJournal:
+    """
+    Manages a daily achievement log where users document their progress.
+    """
+
+    def __init__(self, mentor, stats_manager):
+        """Initializes the journal manager."""
+        self.mentor = mentor
+        self.stats_manager = stats_manager
+
+    def run(self):
+        """Main loop for documenting achievements."""
+        while True:
+            UI.clear_screen()
+            self.mentor.speak("DAILY LOG: What did you achieve today?", "teacher")
+            logs = self.stats_manager.stats.get("daily_logs", [])
+            
+            # Display recent logs (last 5)
+            if logs:
+                print(f"\n  {UI.C['bold']}Recent Log Entries:{UI.C['reset']}")
+                for l in logs[-5:]:
+                    print(f"  {UI.C['dim']}[{l['date'][:10]}]{UI.C['reset']} {l['achievement']}")
+            else:
+                print(f"\n  {UI.C['dim']}(No entries yet. Start documenting your growth.){UI.C['reset']}")
+            
+            print(f"\n{UI.C['dim']}[A]dd Entry | [V]iew History | [B]ack{UI.C['reset']}")
+            c = UI.get_input().lower()
+            
+            if any(w in c for w in ['a', 'add']):
+                achievement = UI.get_input("What did you do today? › ")
+                if len(achievement) > 3:
+                    entry = {
+                        "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                        "achievement": achievement
+                    }
+                    if "daily_logs" not in self.stats_manager.stats:
+                        self.stats_manager.stats["daily_logs"] = []
+                    self.stats_manager.stats["daily_logs"].append(entry)
+                    self.stats_manager.save_stats()
+                    self.mentor.speak("Achievement recorded. Documentation is key to discipline.", "supportive")
+                else:
+                    self.mentor.speak("Be more specific. Every bit of progress counts.", "firm")
+            
+            elif any(w in c for w in ['v', 'view']):
+                UI.clear_screen()
+                self.mentor.speak("FULL LOG HISTORY", "teacher")
+                for l in reversed(logs):
+                    print(f"  {UI.C['dim']}[{l['date']}]{UI.C['reset']} {l['achievement']}")
+                UI.get_input("\nPress Enter to return...")
+            
+            elif any(w in c for w in ['b', 'back']):
+                break

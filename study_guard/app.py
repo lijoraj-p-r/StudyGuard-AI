@@ -10,7 +10,7 @@ import sys
 from .core import StatsManager, ChatLogger, KNOWN_SUBJECTS
 from .ui import UI, Interpreter
 from .mentor import Mentor
-from .features import StudySession, InterviewPrep, TaskManager
+from .features import StudySession, InterviewPrep, TaskManager, DailyJournal
 
 class StudyGuardApp:
     """
@@ -23,6 +23,7 @@ class StudyGuardApp:
         study_session: Feature for focused study intervals.
         interview_prep: Feature for mock interview questions.
         task_manager: Feature for managing academic checklists.
+        journal: Feature for daily documentation of achievements.
     """
 
     def __init__(self):
@@ -34,6 +35,7 @@ class StudyGuardApp:
         self.study_session = StudySession(self.mentor, self.stats_manager)
         self.interview_prep = InterviewPrep(self.mentor, self.stats_manager)
         self.task_manager = TaskManager(self.mentor, self.stats_manager, self.study_session)
+        self.journal = DailyJournal(self.mentor, self.stats_manager)
         
         # Mark the user as active for today
         self.stats_manager.update_streak()
@@ -55,16 +57,20 @@ class StudyGuardApp:
                 
                 # Intent-based routing
                 if intent == "exit":
+                    if UI.get_input("Would you like to log your achievements for today before leaving? (y/n) › ").lower() == 'y':
+                        self.journal.run()
                     self.mentor.speak("Goodbye! Rest well and come back stronger.", "supportive")
                     break
                 elif intent == "help":
-                    self.mentor.speak("You can say 'Study [Subject]', 'Interview', 'Manage tasks', or 'Dashboard'.", "teacher")
+                    self.mentor.speak("You can say 'Study [Subject]', 'Interview', 'Manage tasks', 'Journal', or 'Dashboard'.", "teacher")
                 elif intent == "stats":
                     UI.show_dashboard(self.stats_manager.stats, self.stats_manager.get_rank())
                 elif intent == "pending":
                     self.task_manager.run()
                 elif intent == "interview":
                     self.interview_prep.run()
+                elif intent == "journal":
+                    self.journal.run()
                 elif intent == "sprint":
                     self.study_session.run(None, is_sprint=True)
                 elif intent == "apology":

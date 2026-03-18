@@ -124,6 +124,7 @@ class Interpreter:
         if any(w in inp for w in ["hello", "hi", "hey"]): return "greeting", None
         if any(w in inp for w in ["interview", "prep", "mock", "question"]): return "interview", None
         if any(w in inp for w in ["sprint", "quick"]): return "sprint", None
+        if any(w in inp for w in ["journal", "log", "diary", "achievement", "today"]): return "journal", None
 
         # Anti-distraction logic
         distractions = ["scroll", "insta", "game", "lazy", "netflix"]

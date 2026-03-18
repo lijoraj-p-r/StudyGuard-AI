@@ -352,7 +352,8 @@ class StatsManager:
             "last_study_date": None,
             "subject_breakdown": {},
             "pending_tasks": [],
-            "summary_history": []
+            "summary_history": [],
+            "daily_logs": []
         }
         self.load_stats()
         self._migrate_tasks()
