@@ -57,10 +57,10 @@ class Aura:
                 "Let's stick to the plan! You can say 'study', 'interview', 'pending tasks', or 'journal'.",
                 "No cap, I didn't get that. Want to study, check tasks, or hit the diary? 📝",
                 "My logic circuits are slightly confused. Try 'study', 'interview', or 'journal' to keep the grind going! 🔥",
-                "I'm locked in, but I didn't catch that. Try 'study [subject]', 'tasks', or 'stats'.",
-                "A bit of a main character moment—I didn't understand. Want to 'study', 'interview', or 'log' your progress?",
+                "I'm locked in, but I didn't catch that. Try 'study [subject]', 'tasks', 'stats', or 'diary'.",
+                "A bit of a main character moment—I didn't understand. Want to 'study', 'interview', or 'log' your progress in your diary?",
                 "Let's get back to the grindset. Try saying 'study', 'pending', or 'diary'. 🚀",
-                "System error (not really, I just didn't catch that). How about a study session or checking your rank?"
+                "System error (not really, I just didn't catch that). How about a study session, checking your rank, or writing in your journal?"
             ],
             "gratitude": [
                 "Happy to help! Keep pushing forward.",
@@ -131,4 +131,4 @@ class Aura:
         if intent in self.intent_responses:
             self.speak(random.choice(self.intent_responses[intent]), "teacher")
         else:
-            self.speak(f"I see. Let's move on to 'study', 'interview', or 'tasks'.", "neutral")
+            self.speak(f"I see. Let's move on to 'study', 'interview', 'tasks', or 'journal'.", "neutral")
