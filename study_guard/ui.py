@@ -119,6 +119,7 @@ class Interpreter:
         if any(w in inp for w in ["stats", "dashboard", "rank", "progress", "score", "kp"]): return "stats", None
         if any(w in inp for w in ["pending", "tasks", "todo", "homework", "check", "list"]): return "pending", None
         if any(w in inp for w in ["help", "guide", "commands", "what can i do"]): return "help", None
+        if any(w in inp for w in ["who are you", "about", "creator", "maker", "developer", "made by", "who made"]): return "about", None
         if any(w in inp for w in ["sorry", "apology", "my bad"]): return "apology", None
         if any(w in inp for w in ["thanks", "thank you", "thx", "cool", "great"]): return "gratitude", None
         if any(w in inp for w in ["hello", "hi", "hey", "greet", "morning", "evening"]): return "greeting", None
