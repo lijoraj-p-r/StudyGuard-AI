@@ -73,8 +73,13 @@ class StudyGuardApp:
                     self.journal.run()
                 elif intent == "sprint":
                     self.study_session.run(None, is_sprint=True)
-                elif intent in ["apology", "gratitude", "greeting", "identity", "creator"]:
+                elif intent in ["apology", "gratitude", "greeting", "identity", "creator", "smalltalk", "subjects"]:
                     self.aura.respond(intent)
+                elif intent == "motivation":
+                    self.aura.respond(intent)
+                    from .core import MOTIVATIONAL_QUOTES
+                    import random
+                    self.aura.speak(random.choice(MOTIVATIONAL_QUOTES), "supportive")
                 elif intent == "distracted":
                     self.aura.scold()
                 elif intent == "studying":

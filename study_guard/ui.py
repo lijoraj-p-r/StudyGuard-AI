@@ -121,6 +121,9 @@ class Interpreter:
         if any(w in inp for w in ["help", "guide", "commands", "what can i do"]): return "help", None
         if any(w in inp for w in ["who are you", "what are you", "your name"]): return "identity", None
         if any(w in inp for w in ["creator", "maker", "developer", "made by", "who made", "built by", "lijo", "lijoraj"]): return "creator", None
+        if any(w in inp for w in ["subject", "topics", "list", "what can i study"]): return "subjects", None
+        if any(w in inp for w in ["quote", "motivation", "inspire", "lazy", "tired", "give up"]): return "motivation", None
+        if any(w in inp for w in ["how are you", "how's it going", "you good", "feeling"]): return "smalltalk", None
         if any(w in inp for w in ["sorry", "apology", "my bad"]): return "apology", None
         if any(w in inp for w in ["thanks", "thank you", "thx", "cool", "great"]): return "gratitude", None
         if any(w in inp for w in ["hello", "hi", "hey", "greet", "morning", "evening"]): return "greeting", None

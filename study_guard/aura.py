@@ -83,6 +83,23 @@ class Aura:
                 "I was created by LijoRaj, a talented full-stack developer from India. He built me for study purposes to help others achieve academic excellence! 🇮🇳🚀",
                 "My developer is LijoRaj, a full-stack dev based in India. He engineered my core systems to support student productivity and discipline. 💻🛡️",
                 "LijoRaj from India is my creator! He's a full-stack developer who built me as a project to help users manage their learning journey effectively. 🛠️✨"
+            ],
+            "motivation": [
+                "The grind never stops. Let's make every second count. Want a quote? 🔥",
+                "I've got a database full of motivation. Stay focused, and you'll be unstoppable. 🎯",
+                "Whenever you feel tired, remember why you started. I'm here to back you up! 💪",
+                "Success isn't owned, it's leased—and rent is due every day. Let's get to work! 🚀"
+            ],
+            "smalltalk": [
+                "I'm feeling fully optimized and ready to study! How about you? 😊",
+                "I'm locked in! My circuits are buzzing with knowledge today. Let's share some! 🧠⚡",
+                "I'm doing great! It's always a good day to level up your skills. 🌟",
+                "Just doing my part to help you succeed. Ready for the next challenge? 💎"
+            ],
+            "subjects": [
+                "I can help you with anything from Physics and Math to Python, Java, and Databases! Try 'Study [Subject]'. 📚",
+                "My knowledge base includes Java, Python, MySQL, DSA, and even Aptitude. What's the goal for today? 🎯",
+                "I'm well-versed in several subjects. Try saying 'Study Math' or 'Interview Java' to see what I can do! 🌟"
             ]
         }
 
