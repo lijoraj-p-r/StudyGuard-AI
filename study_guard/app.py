@@ -73,7 +73,7 @@ class StudyGuardApp:
                     self.journal.run()
                 elif intent == "sprint":
                     self.study_session.run(None, is_sprint=True)
-                elif intent in ["apology", "gratitude", "greeting", "about"]:
+                elif intent in ["apology", "gratitude", "greeting", "identity", "creator"]:
                     self.aura.respond(intent)
                 elif intent == "distracted":
                     self.aura.scold()

@@ -68,11 +68,15 @@ class Aura:
                 "Focus on the next task, not the last mistake. Ready?",
                 "Apology accepted. Let's turn that around with some progress!"
             ],
-            "about": [
-                "I am Aura, your dedicated StudyGuard AI. I was created by LijoRaj, a full-stack developer from India, for study purposes. My goal is to keep you focused and help you master your subjects! 🇮🇳🚀",
-                "I'm your study partner, Aura! My developer, LijoRaj from India, built me to help students like you stay on top of their academic game. 📚✨",
-                "Aura here! I'm a study-focused AI created by LijoRaj. He's a full-stack developer in India who wanted to build something useful for learning and discipline. 🛡️💡",
-                "I was developed by LijoRaj in India to serve as a modular mentor for anyone looking to sharpen their skills. I'm here to ensure you stay 'locked in'! 🎯💎"
+            "identity": [
+                "I am Aura, your StudyGuard AI. I'm here to help you stay focused, track your study goals, and prep for interviews. Think of me as your academic wingman! 🛡️📚",
+                "My name is Aura! I'm a modular AI designed to optimize your study habits and keep you disciplined while you learn. 🎯💎",
+                "Aura here! I'm your digital mentor, built to manage your tasks and help you master new subjects through focused sessions and interactive recall. 🧠🌟"
+            ],
+            "creator": [
+                "I was created by LijoRaj, a talented full-stack developer from India. He built me for study purposes to help others achieve academic excellence! 🇮🇳🚀",
+                "My developer is LijoRaj, a full-stack dev based in India. He engineered my core systems to support student productivity and discipline. 💻🛡️",
+                "LijoRaj from India is my creator! He's a full-stack developer who built me as a project to help users manage their learning journey effectively. 🛠️✨"
             ]
         }
 
