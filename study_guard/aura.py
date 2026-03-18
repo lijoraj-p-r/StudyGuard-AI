@@ -46,15 +46,15 @@ class Aura:
             ],
             "help": [
                 "You can say 'Study [Subject]', 'Interview', 'Manage tasks', 'Journal', or 'Dashboard'.",
-                "I'm here to guide you. Try 'study python', 'view tasks', or check your 'stats'.",
-                "Need direction? You can start a 'study' session, do an 'interview', or 'log' your day.",
-                "I can help with studying, interview prep, and task management. What's first?"
+                "I'm here to guide you. Try 'study python', 'view tasks', 'journal', or check your 'stats'.",
+                "Need direction? You can start a 'study' session, do an 'interview', or 'log' your day in the diary.",
+                "I can help with studying, interview prep, task management, and daily journaling. What's first?"
             ],
             "unknown": [
-                "I'm not quite sure I follow. Try 'study [subject]', 'interview', or 'tasks'.",
-                "Hmm, that's not in my database. Could you rephrase? Maybe try 'study' or 'stats'.",
-                "I didn't catch that. How about we focus on a study session or interview prep?",
-                "Let's stick to the plan! You can say 'study', 'interview', or 'pending tasks'."
+                "I'm not quite sure I follow. Try 'study [subject]', 'interview', 'tasks', or 'journal'.",
+                "Hmm, that's not in my database. Could you rephrase? Maybe try 'study', 'stats', or 'diary'.",
+                "I didn't catch that. How about we focus on a study session, interview prep, or logging your day?",
+                "Let's stick to the plan! You can say 'study', 'interview', 'pending tasks', or 'journal'."
             ],
             "gratitude": [
                 "Happy to help! Keep pushing forward.",
