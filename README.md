@@ -1,6 +1,6 @@
-# 🛡️ StudyGuard AI: Your Modular Academic Mentor
+# 🛡️ StudyGuard AI: Your Modular Academic Aura
 
-**StudyGuard AI** is a professional terminal-based study companion designed to optimize academic productivity. It transforms the solitary experience of studying into an interactive, gamified journey with a focus on long-term retention and career readiness.
+**StudyGuard AI** is a professional terminal-based study companion designed to optimize academic productivity. Guided by **Aura**, your AI persona, it transforms the solitary experience of studying into an interactive, gamified journey with a focus on long-term retention and career readiness.
 
 ---
 
@@ -16,18 +16,24 @@ Stay organized with a structured academic checklist that supports:
 ### ⏱️ High-Focus Study Sessions
 - **Goal-Oriented**: Requires a specific goal for every session to ensure intent-based learning.
 - **Dynamic Motivation**: Features a curated list of **Motivational Quotes** that automatically refresh every 60 seconds to maintain high morale.
-- **Active Recall**: Mandates a one-sentence summary at the end of every session to solidify memory.
+- **Active Recall**: Mandates a varied summary at the end of every session to solidify memory.
 - **Sprint Mode**: A 10-minute "pure focus" mode for quick bursts of productivity.
 
 ### 🎓 Interview & Expertise
-- **Mock Interviews**: Interactive Q&A sessions covering **Java, Python, SQL, DSA, and Aptitude**.
-- **Expert Explanations**: Every question includes a deep-dive explanation to build conceptual clarity.
+- **Mock Interviews**: Interactive Q&A sessions covering **Java, Python, SQL, DATABASE, DSA, and Aptitude**.
+- **Expert Explanations**: Every question includes a deep-dive "PROFESSIONAL EXPLANATION" to build conceptual clarity.
+- **Effort-Based Rewards**: Earn more Knowledge Points (KP) for detailed, thoughtful answers.
 - **Progressive Difficulty**: Tracks your expertise and identifies your top subjects based on time investment.
 
-### 🎮 Gamification & Stats
-- **Knowledge Points (KP)**: Earn points based on time studied and session quality.
-- **Scholar Ranking**: Level up from **Novice Scholar** to **Master Scholar**.
-- **Streaks**: Encourages consistency with a daily study streak tracker.
+### 📖 Daily Achievement Diary (New!)
+- **Journaling**: Document what you did today to stay disciplined and track your growth.
+- **History**: View your past achievements to see how far you've come.
+- **Exit Prompts**: Aura proactively asks if you'd like to log your day before you leave.
+
+### 🤖 Conversational Aura
+- **Natural Language**: Aura understands typos (e.g., "inderview") and natural phrasing.
+- **Personality**: Engage in small talk, ask for on-demand motivation, or list available study subjects.
+- **Dynamic Responses**: Randomized and varied responses ensure every interaction feels fresh and supportive.
 
 ---
 
@@ -38,21 +44,15 @@ The codebase is modularized for clarity and maintainability:
 - **`main.py`**: Application bootstrap and entry point.
 - **`study_guard/app.py`**: Core orchestrator and natural language intent interpreter.
 - **`study_guard/core.py`**: Data persistence, statistics logic, and knowledge databases.
-- **`study_guard/features.py`**: Implementation of Study, Interview, and Task modules.
-- **`study_guard/mentor.py`**: AI persona logic with multiple "mood" profiles.
+- **`study_guard/features.py`**: Implementation of Study, Interview, Task, and Journal modules.
+- **`study_guard/aura.py`**: AI persona logic with multiple "mood" profiles and randomized styles.
 - **`study_guard/ui.py`**: Terminal UI engine (ANSI colors, typewriter effects, live dashboards).
-
-### Documentation Standard
-Every file, class, and method is fully documented with:
-- **Module Headers**: Explaining the role of each file in the system.
-- **Docstrings**: Detailing class attributes, method parameters, and return types.
-- **Technical Comments**: Explaining complex terminal manipulations and data migration paths.
 
 ---
 
 ## 📖 Quick Start Guide
 
-1. **Launch the Mentor**:
+1. **Launch Aura**:
    ```bash
    python3 main.py
    ```
@@ -61,14 +61,18 @@ Every file, class, and method is fully documented with:
    - `study [subject]` — Start a focused session.
    - `tasks` — Open the Academic Task Hub.
    - `interview` — Start a mock interview.
+   - `journal` or `diary` — Log your achievements.
+   - `motivation` — Get an instant motivational quote.
+   - `subjects` — See what you can study with Aura.
+   - `who are you` — Learn about Aura's purpose.
+   - `who made you` — Find out about the developer.
    - `dashboard` — View your rank and expertise.
    - `sprint` — Start a 10-minute quick session.
 
-3. **Task Hub Navigation**:
-   - `[A]` — Add a new task with priority.
-   - `[T]` — Toggle a task as completed.
-   - `[S]` — Select a task and start studying it immediately.
-   - `[C]` — Clear all completed tasks.
+---
+
+## 👤 Who is Aura?
+Aura was created by **LijoRaj**, a full-stack developer from India, for study and productivity purposes. It is designed to be a "modular mentor" that combines technical depth with a Gen Z-friendly aesthetic to make studying less of a chore and more of a mission.
 
 ---
 
