@@ -1,7 +1,7 @@
 """
-AI Mentor Persona Module
+AI Aura Persona Module
 ------------------------
-Defines the Mentor class which acts as the voice of the application.
+Defines the Aura class which acts as the voice of the application.
 It handles user communication with different emotional tones (moods) 
 and provides motivation/scolding based on user behavior.
 """
@@ -10,13 +10,13 @@ import random
 import sys
 from .ui import UI
 
-class Mentor:
+class Aura:
     """
     The AI Persona that interacts with the user.
     """
 
     def __init__(self, logger):
-        """Initializes the mentor with a reference to the chat logger."""
+        """Initializes the persona with a reference to the chat logger."""
         self.logger = logger
         self.scold_phrases = [
             "Let's stay focused. Your future self will thank you for this effort.",
@@ -82,7 +82,7 @@ class Mentor:
         icons = {"strict": "⚠️", "firm": "💡", "supportive": "🌟", "teacher": "📚", "neutral": "🤖"}
         color = UI.C.get(mood, "")
         icon = icons.get(mood, "🤖")
-        sys.stdout.write(f"\n{color}{icon} Mentor › {UI.C['reset']}")
+        sys.stdout.write(f"\n{color}{icon} Aura › {UI.C['reset']}")
         UI.typewriter(text)
 
     def scold(self):

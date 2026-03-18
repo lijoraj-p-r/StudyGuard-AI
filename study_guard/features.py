@@ -19,13 +19,13 @@ class StudySession:
     Manages a focused study period where the user tracks a specific goal.
     
     Attributes:
-        mentor: The AI mentor for feedback and encouragement.
+        aura: The AI aura for feedback and encouragement.
         stats_manager: For updating KP and study time.
     """
 
-    def __init__(self, mentor, stats_manager):
+    def __init__(self, aura, stats_manager):
         """Initializes the study session with necessary managers."""
-        self.mentor = mentor
+        self.aura = aura
         self.stats_manager = stats_manager
 
     def run(self, subject, is_sprint=False):
@@ -38,21 +38,21 @@ class StudySession:
         """
         subject = subject or "General Revision"
         UI.clear_screen()
-        self.mentor.speak(f"Session: {subject.upper()}", "teacher")
+        self.aura.speak(f"Session: {subject.upper()}", "teacher")
         
         # Display subject-specific encouragement if known
         if subject.lower() in KNOWN_SUBJECTS:
-            self.mentor.speak(KNOWN_SUBJECTS[subject.lower()], "supportive")
+            self.aura.speak(KNOWN_SUBJECTS[subject.lower()], "supportive")
         
         # Force the user to set a specific goal
         while True:
             goal = UI.get_input("What is your ONE specific goal for this session? › ")
             if len(goal) < 3 or any(w in goal.lower() for w in ["nothing", "none", "idk"]):
-                self.mentor.speak("A specific goal keeps your mind sharp. Try something like 'Read 3 pages' or 'Solve 5 problems'.", "firm")
+                self.aura.speak("A specific goal keeps your mind sharp. Try something like 'Read 3 pages' or 'Solve 5 problems'.", "firm")
             else: break
             
-        self.mentor.speak(f"Target locked: '{goal}'. Focus mode active.", "supportive")
-        if is_sprint: self.mentor.speak("SPRINT MODE: 10 minutes of pure focus. Let's go!", "firm")
+        self.aura.speak(f"Target locked: '{goal}'. Focus mode active.", "supportive")
+        if is_sprint: self.aura.speak("SPRINT MODE: 10 minutes of pure focus. Let's go!", "firm")
         
         start_time = datetime.now()
         current_quote = random.choice(MOTIVATIONAL_QUOTES)
@@ -94,7 +94,7 @@ class StudySession:
         clean_sub = subject.split()[0].lower()
         self.stats_manager.stats["subject_breakdown"][clean_sub] = self.stats_manager.stats["subject_breakdown"].get(clean_sub, 0) + duration
         
-        self.mentor.speak(f"Well done. You spent {mins} minutes on your studies.", "supportive")
+        self.aura.speak(f"Well done. You spent {mins} minutes on your studies.", "supportive")
         
         # Force active recall with a variety of prompts
         recall_prompts = [
@@ -108,7 +108,7 @@ class StudySession:
         while True:
             summary = UI.get_input(random.choice(recall_prompts))
             if len(summary) < 5 or any(w in summary.lower() for w in ["nothing", "forgot", "idk", "none"]):
-                self.mentor.speak("Active recall is vital! What's one thing you remember?", "firm")
+                self.aura.speak("Active recall is vital! What's one thing you remember?", "firm")
             else: break
             
         self.stats_manager.stats["summary_history"].append({"date": str(datetime.now()), "sub": subject, "sum": summary})
@@ -122,25 +122,25 @@ class StudySession:
         total_kp = (mins * 5) + bonus_kp
         self.stats_manager.stats["knowledge_points"] += total_kp
         self.stats_manager.save_stats()
-        self.mentor.speak(f"Session finished. +{total_kp} KP earned.", "supportive")
+        self.aura.speak(f"Session finished. +{total_kp} KP earned.", "supportive")
 
 class InterviewPrep:
     """
     Facilitates a mock interview session.
     """
 
-    def __init__(self, mentor, stats_manager):
+    def __init__(self, aura, stats_manager):
         """Initializes the interview manager."""
-        self.mentor = mentor
+        self.aura = aura
         self.stats_manager = stats_manager
 
     def run(self):
         """Starts the interactive interview loop."""
         UI.clear_screen()
-        self.mentor.speak("INTERVIEW PREP MODE: Let's sharpen your career skills.", "teacher")
+        self.aura.speak("INTERVIEW PREP MODE: Let's sharpen your career skills.", "teacher")
         subjects = list(INTERVIEW_DB.keys())
         
-        self.mentor.speak(f"Available Subjects: {', '.join([s.upper() for s in subjects])}", "teacher")
+        self.aura.speak(f"Available Subjects: {', '.join([s.upper() for s in subjects])}", "teacher")
         choice = UI.get_input("Which subject? (or 'exit') › ").lower()
         if "exit" in choice: return
         
@@ -149,7 +149,7 @@ class InterviewPrep:
             matches = [s for s in subjects if s in choice]
             choice = matches[0] if matches else random.choice(subjects)
         
-        self.mentor.speak(f"TARGET LOCKED: {choice.upper()}. Type 'exit' to finish.", "supportive")
+        self.aura.speak(f"TARGET LOCKED: {choice.upper()}. Type 'exit' to finish.", "supportive")
         asked = []
         
         while True:
@@ -159,16 +159,16 @@ class InterviewPrep:
             item = random.choice(available)
             asked.append(item['q'])
             
-            self.mentor.speak(f"QUESTION: {item['q']}", "teacher")
+            self.aura.speak(f"QUESTION: {item['q']}", "teacher")
             user_ans = UI.get_input("Your Answer › ")
             if "exit" in user_ans.lower(): break
             
             # Constructive feedback and points based on effort
             if len(user_ans) < 15:
-                self.mentor.speak("That's a bit brief for an interview. Try to be more descriptive next time!", "firm")
+                self.aura.speak("That's a bit brief for an interview. Try to be more descriptive next time!", "firm")
                 earned_kp = 5
             elif len(user_ans) > 50:
-                self.mentor.speak("Excellent level of detail. This kind of thoroughness impresses recruiters!", "supportive")
+                self.aura.speak("Excellent level of detail. This kind of thoroughness impresses recruiters!", "supportive")
                 earned_kp = 15
             else:
                 earned_kp = 10
@@ -189,9 +189,9 @@ class TaskManager:
     Manages a persistent, structured checklist of academic tasks.
     """
 
-    def __init__(self, mentor, stats_manager, study_session):
+    def __init__(self, aura, stats_manager, study_session):
         """Initializes the task manager with session cross-links."""
-        self.mentor = mentor
+        self.aura = aura
         self.stats_manager = stats_manager
         self.study_session = study_session
 
@@ -199,7 +199,7 @@ class TaskManager:
         """Main loop for task management (Add, Delete, Toggle, Study)."""
         while True:
             UI.clear_screen()
-            self.mentor.speak("Academic Task Hub", "teacher")
+            self.aura.speak("Academic Task Hub", "teacher")
             tasks = self.stats_manager.stats["pending_tasks"]
             
             # Table Display
@@ -266,16 +266,16 @@ class DailyJournal:
     Manages a daily achievement log where users document their progress.
     """
 
-    def __init__(self, mentor, stats_manager):
+    def __init__(self, aura, stats_manager):
         """Initializes the journal manager."""
-        self.mentor = mentor
+        self.aura = aura
         self.stats_manager = stats_manager
 
     def run(self):
         """Main loop for documenting achievements."""
         while True:
             UI.clear_screen()
-            self.mentor.speak("DAILY LOG: What did you achieve today?", "teacher")
+            self.aura.speak("DAILY LOG: What did you achieve today?", "teacher")
             logs = self.stats_manager.stats.get("daily_logs", [])
             
             # Display recent logs (last 5)
@@ -300,13 +300,13 @@ class DailyJournal:
                         self.stats_manager.stats["daily_logs"] = []
                     self.stats_manager.stats["daily_logs"].append(entry)
                     self.stats_manager.save_stats()
-                    self.mentor.speak("Achievement recorded. Documentation is key to discipline.", "supportive")
+                    self.aura.speak("Achievement recorded. Documentation is key to discipline.", "supportive")
                 else:
-                    self.mentor.speak("Be more specific. Every bit of progress counts.", "firm")
+                    self.aura.speak("Be more specific. Every bit of progress counts.", "firm")
             
             elif any(w in c for w in ['v', 'view']):
                 UI.clear_screen()
-                self.mentor.speak("FULL LOG HISTORY", "teacher")
+                self.aura.speak("FULL LOG HISTORY", "teacher")
                 for l in reversed(logs):
                     print(f"  {UI.C['dim']}[{l['date']}]{UI.C['reset']} {l['achievement']}")
                 UI.get_input("\nPress Enter to return...")

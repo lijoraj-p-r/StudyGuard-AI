@@ -9,7 +9,7 @@ study sessions, interview prep, and task management.
 import sys
 from .core import StatsManager, ChatLogger, KNOWN_SUBJECTS
 from .ui import UI, Interpreter
-from .mentor import Mentor
+from .aura import Aura
 from .features import StudySession, InterviewPrep, TaskManager, DailyJournal
 
 class StudyGuardApp:
@@ -19,7 +19,7 @@ class StudyGuardApp:
     Attributes:
         stats_manager: Handles loading and saving of study statistics.
         logger: Manages the chat history and logging.
-        mentor: The AI persona that interacts with the user.
+        aura: The AI persona that interacts with the user.
         study_session: Feature for focused study intervals.
         interview_prep: Feature for mock interview questions.
         task_manager: Feature for managing academic checklists.
@@ -30,12 +30,12 @@ class StudyGuardApp:
         """Initializes the application components and updates the study streak."""
         self.stats_manager = StatsManager()
         self.logger = ChatLogger()
-        self.mentor = Mentor(self.logger)
+        self.aura = Aura(self.logger)
         
-        self.study_session = StudySession(self.mentor, self.stats_manager)
-        self.interview_prep = InterviewPrep(self.mentor, self.stats_manager)
-        self.task_manager = TaskManager(self.mentor, self.stats_manager, self.study_session)
-        self.journal = DailyJournal(self.mentor, self.stats_manager)
+        self.study_session = StudySession(self.aura, self.stats_manager)
+        self.interview_prep = InterviewPrep(self.aura, self.stats_manager)
+        self.task_manager = TaskManager(self.aura, self.stats_manager, self.study_session)
+        self.journal = DailyJournal(self.aura, self.stats_manager)
         
         # Mark the user as active for today
         self.stats_manager.update_streak()
@@ -46,9 +46,9 @@ class StudyGuardApp:
         Displays the dashboard and handles user input via the Interpreter.
         """
         UI.clear_screen()
-        print(f"\033[1;38;5;198m◈ STUDYGUARD AI: MODULAR MENTOR ◈\033[0m")
+        print(f"\033[1;38;5;198m◈ STUDYGUARD AI: MODULAR AURA ◈\033[0m")
         UI.show_dashboard(self.stats_manager.stats, self.stats_manager.get_rank())
-        self.mentor.speak("Welcome back! I'm ready to help you study. What's on the agenda?", "supportive")
+        self.aura.speak("Welcome back! I'm ready to help you study. What's on the agenda?", "supportive")
         
         while True:
             try:
@@ -59,10 +59,10 @@ class StudyGuardApp:
                 if intent == "exit":
                     if UI.get_input("Would you like to log your achievements for today before leaving? (y/n) › ").lower() == 'y':
                         self.journal.run()
-                    self.mentor.speak("Goodbye! Rest well and come back stronger.", "supportive")
+                    self.aura.speak("Goodbye! Rest well and come back stronger.", "supportive")
                     break
                 elif intent == "help":
-                    self.mentor.respond("help")
+                    self.aura.respond("help")
                 elif intent == "stats":
                     UI.show_dashboard(self.stats_manager.stats, self.stats_manager.get_rank())
                 elif intent == "pending":
@@ -74,13 +74,13 @@ class StudyGuardApp:
                 elif intent == "sprint":
                     self.study_session.run(None, is_sprint=True)
                 elif intent in ["apology", "gratitude", "greeting"]:
-                    self.mentor.respond(intent)
+                    self.aura.respond(intent)
                 elif intent == "distracted":
-                    self.mentor.scold()
+                    self.aura.scold()
                 elif intent == "studying":
                     self.study_session.run(subject)
                 else:
-                    self.mentor.respond("unknown")
+                    self.aura.respond("unknown")
                     
             except KeyboardInterrupt:
                 # Ensure stats are saved on abrupt exit

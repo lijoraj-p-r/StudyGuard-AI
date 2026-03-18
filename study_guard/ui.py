@@ -39,7 +39,7 @@ class UI:
     @staticmethod
     def typewriter(text, base_speed=0.015):
         """
-        Simulates a human typing effect for the mentor's speech.
+        Simulates a human typing effect for the aura's speech.
         
         Args:
             text: The string to be printed.
