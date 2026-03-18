@@ -54,7 +54,13 @@ class Aura:
                 "I'm not quite sure I follow. Try 'study [subject]', 'interview', 'tasks', or 'journal'.",
                 "Hmm, that's not in my database. Could you rephrase? Maybe try 'study', 'stats', or 'diary'.",
                 "I didn't catch that. How about we focus on a study session, interview prep, or logging your day?",
-                "Let's stick to the plan! You can say 'study', 'interview', 'pending tasks', or 'journal'."
+                "Let's stick to the plan! You can say 'study', 'interview', 'pending tasks', or 'journal'.",
+                "No cap, I didn't get that. Want to study, check tasks, or hit the diary? 📝",
+                "My logic circuits are slightly confused. Try 'study', 'interview', or 'journal' to keep the grind going! 🔥",
+                "I'm locked in, but I didn't catch that. Try 'study [subject]', 'tasks', or 'stats'.",
+                "A bit of a main character moment—I didn't understand. Want to 'study', 'interview', or 'log' your progress?",
+                "Let's get back to the grindset. Try saying 'study', 'pending', or 'diary'. 🚀",
+                "System error (not really, I just didn't catch that). How about a study session or checking your rank?"
             ],
             "gratitude": [
                 "Happy to help! Keep pushing forward.",
